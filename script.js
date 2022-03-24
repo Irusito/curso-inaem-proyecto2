@@ -64,3 +64,25 @@ const getJSON = function (url, errMessage) {
     return response.json();
   });
 };
+
+// -----------------------------------------------------------
+
+function whereami(lat,long)
+{
+  const url =`https://geocode.xyz/${lat},${long}?geoit=json`
+  fetch(url)
+  .then(response =>
+    { 
+     if (!response.ok) {
+      throw Error('no se ha podido manejar la solicitud');
+    }
+    return response.json();
+    })
+  .then(data =>{
+    // obtener pais y llamar a getCountryData
+    console.log(data);
+  })
+  .catch(err => console.log(err.message, 'error'))
+}
+
+whereami(52.508, 13.381);

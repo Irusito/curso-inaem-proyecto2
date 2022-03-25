@@ -10,13 +10,13 @@ html {
 body {
   font-family: system-ui;
   color: #555;
-  background-color: #f7f7f7;
+  background-image: linear-gradient(to top left, #ccc73f 0%, #54b89f 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container {
+.containerCountries {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -47,7 +47,8 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #888;
+  color: #fff;
+  
 }
 .neighbour {
   transform: scale(0.8) translateY(1rem);
@@ -106,6 +107,14 @@ body {
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+.form-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.75rem;
+  background-color: #eee;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  box-shadow: #ccc 1px 1px ;
+}
 
 
 

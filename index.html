@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-
+ <!-- Bootstrap CSS -->
+ <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Asynchronous JavaScript</title>
   </head>
   <body>
-    <button id="btnPais">Obtener paises</button>
-    <main class="container">
+
+<div id="form-container" class="form-container">
+  <h2> Obtener datos de un pais</h2>
+  <hr>
+      <div class="form-block">
+        <label class="form-label" for="lat">Latitud </label>
+        <input class="form-control" type="text" name="lat" id="lat" placeholder="Ej:(52.508)" />
+    </div>
+    <div class="form-block">
+      <label class="form-label" for="long">Longitud</label>
+      <input class="form-control" type="text" name="long" id="long" placeholder="Ej:(13.381)" />
+  </div>
+  <div class="form-block">
+    <div class="mt-2">
+        <button class="submit btn btn-success" id="btnPais" value="submit" name="submit" type="submit" class="form-control">Get data</button>
+      </div>
+</div>
+</div>
+   
+    <main class="containerCountries">
       <div class="countries">
         <!--
         <article class="country">
